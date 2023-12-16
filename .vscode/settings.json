@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "conio.h": "c",
+        "random": "c",
+        "stdio.h": "c"
+    }
+}

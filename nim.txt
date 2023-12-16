@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+int main() {
+    int numbers[10]; // Mendeklarasikan array dengan ukuran 10
+    int i, index, newValue;
+
+    // Mengisi array dengan input dari pengguna
+    printf("Masukkan 10 angka:\n");
+    for (i = 0; i < 10; i++) {
+        printf("Angka ke-%d: ", i + 1);
+        scanf("%d", &numbers[i]);
+    }
+
+    // Menampilkan data awal dalam array
+    printf("Data awal dalam array: ");
+    for (i = 0; i < 10; i++) {
+        printf("%d ", numbers[i]);
+    }
+    printf("\n");
+
+    // Meminta input indeks dan nilai baru dari pengguna
+    printf("Masukkan indeks yang ingin diubah: ");
+    scanf("%d", &index);
+    printf("Masukkan nilai baru: ");
+    scanf("%d", &newValue);
+
+    // Memeriksa apakah indeks yang dimasukkan valid
+    if (index >= 0 && index < 10) {
+        // Mengubah nilai pada indeks yang dimasukkan oleh pengguna
+        numbers[index] = newValue;
+
+        // Menampilkan data setelah diubah
+        printf("Data setelah diubah: ");
+        for (i = 0; i < 10; i++) {
+            printf("%d ", numbers[i]);
+        }
+        printf("\n");
+    } else {
+        // Jika indeks tidak valid
+        printf("Indeks tidak valid. Harap masukkan indeks antara 0 dan 9.\n");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int size, i;
+
+    // Meminta pengguna untuk memasukkan ukuran array
+    printf("Masukkan ukuran array: ");
+    scanf("%d", &size);
+
+    // Deklarasi array dengan ukuran yang dimasukkan oleh pengguna
+    int numbers[size];
+
+    // Meminta pengguna untuk memasukkan nilai ke dalam array
+    printf("Masukkan %d angka:\n", size);
+    for (i = 0; i < size; i++) {
+        printf("Angka ke-%d: ", i + 1);
+        scanf("%d", &numbers[i]);
+    }
+
+    // Menampilkan data dalam array
+    printf("Data dalam array: ");
+    for (i = 0; i < size; i++) {
+        printf("%d ", numbers[i]);
+    }
+    printf("\n");
+
+    return 0;
+}

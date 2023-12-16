@@ -1,0 +1,10 @@
+Nama Customer: 
+Alamat: 
+No Telephon: 4278528
+Nomor Kamar: 4227200
+Jenis Kamar: 
+Jumlah Pesanan: 4227616
+Lama Menginap: 
+Tanggal Pesan: Mon Nov 27 13:42:03 2023
+
+=====================================
